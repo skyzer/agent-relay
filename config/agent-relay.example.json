@@ -1,0 +1,57 @@
+{
+  "port": "${AGENT_RELAY_PORT}",
+  "defaultPostToGitHub": false,
+  "defaultPostMode": "none",
+  "agents": {
+    "codex-mbp": {
+      "label": "Codex on MacBook Pro",
+      "hostLabel": "MacBook Pro",
+      "launcher": "http-json",
+      "enabled": true,
+      "baseUrl": "https://your-macbook-pro.ts.net/agent-host",
+      "authToken": "${AGENT_HOST_TOKEN}",
+      "remoteAgentKey": "codex"
+    },
+    "codex-mini": {
+      "label": "Codex on Mac mini",
+      "hostLabel": "Mac mini",
+      "launcher": "codex-local",
+      "enabled": true,
+      "cwd": "${HOME}",
+      "command": "codex"
+    },
+    "claude-mini": {
+      "label": "Claude on Mac mini",
+      "hostLabel": "Mac mini",
+      "launcher": "claude-local",
+      "enabled": true,
+      "cwd": "${HOME}",
+      "command": "claude"
+    },
+    "kimi-mini": {
+      "label": "Kimi on Mac mini",
+      "hostLabel": "Mac mini",
+      "launcher": "shell-json",
+      "enabled": false,
+      "cwd": "${HOME}",
+      "command": "kimi",
+        "args": [
+          "--print",
+          "--output-format",
+          "text",
+          "--final-message-only",
+          "-p"
+        ],
+      "notes": "Local Kimi CLI."
+    },
+    "kimi-mbp": {
+      "label": "Kimi on MacBook Pro",
+      "hostLabel": "MacBook Pro",
+      "launcher": "http-json",
+      "enabled": true,
+      "baseUrl": "https://your-macbook-pro.ts.net/agent-host",
+      "authToken": "${AGENT_HOST_TOKEN}",
+      "remoteAgentKey": "kimi"
+    }
+  }
+}

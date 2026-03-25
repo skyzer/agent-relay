@@ -1,0 +1,34 @@
+{
+  "name": "agent-relay",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first review orchestrator for routing PR review jobs across multiple CLI agents.",
+  "scripts": {
+    "build": "vite build --config vite.config.mjs",
+    "host": "node host.js",
+    "start": "node server.js",
+    "dev": "node server.js",
+    "dev:web": "vite --config vite.config.mjs",
+    "host:dev": "node host.js"
+  },
+  "dependencies": {
+    "@radix-ui/react-checkbox": "^1.3.3",
+    "@radix-ui/react-collapsible": "^1.1.12",
+    "@radix-ui/react-popover": "^1.1.15",
+    "@radix-ui/react-separator": "^1.1.8",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@radix-ui/react-tooltip": "^1.2.8",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.6.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "@vitejs/plugin-react": "^6.0.1",
+    "tailwindcss": "^4.2.2",
+    "vite": "^8.0.2"
+  }
+}

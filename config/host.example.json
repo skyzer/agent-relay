@@ -1,0 +1,35 @@
+{
+  "port": "${AGENT_HOST_PORT}",
+  "listenHost": "127.0.0.1",
+  "authToken": "${AGENT_HOST_TOKEN}",
+  "agents": {
+    "codex": {
+      "label": "Codex local agent",
+      "launcher": "codex-local",
+      "enabled": true,
+      "cwd": "${HOME}",
+      "command": "codex"
+    },
+    "claude": {
+      "label": "Claude local agent",
+      "launcher": "claude-local",
+      "enabled": true,
+      "cwd": "${HOME}",
+      "command": "claude"
+    },
+    "kimi": {
+      "label": "Kimi local agent",
+      "launcher": "shell-json",
+      "enabled": true,
+      "cwd": "${HOME}",
+      "command": "kimi",
+        "args": [
+          "--print",
+          "--output-format",
+          "text",
+          "--final-message-only",
+          "-p"
+        ]
+      }
+    }
+}
