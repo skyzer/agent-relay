@@ -4,6 +4,10 @@ Agent Relay is a local-first control plane for your own AI agent fleet.
 
 It does not review code itself. It accepts a task in a web UI, launches configured agents, streams their logs, and stores their final JSON results.
 
+<img width="1252" height="682" alt="image" src="https://github.com/user-attachments/assets/2fa0480f-b950-42af-a402-aaa551f1933b" />
+
+<img width="1253" height="643" alt="image" src="https://github.com/user-attachments/assets/271ba41e-e608-471b-85d9-8d260322d2bb" />
+
 ## Current Use Case
 
 The main current use case is code review across your own machines and CLI agents.
